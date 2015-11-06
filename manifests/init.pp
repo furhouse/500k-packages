@@ -35,7 +35,8 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class packages {
+class packages($packages = {}) {
 
+  create_resources('packages::package', $packages)
 
 }
